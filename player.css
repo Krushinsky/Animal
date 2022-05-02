@@ -1,0 +1,40 @@
+#player{
+    display: flex;
+    background-color: rgba(73, 79, 161, 0.596);
+    padding: 10px;
+    border-radius: 30px;
+    width: 330px;
+    margin-top: 40px;
+    margin-left: 37%;
+    justify-content: center;
+}
+
+#volume{
+    text-align: center;
+
+}
+.vol{
+    text-align: center;
+}
+#controls{
+    display: flex;
+    flex-direction: row;
+}
+.audio-track {
+    flex-direction: column;
+    align-self: center;
+    width: 300px;
+    height: 3px;
+    background-color: #dddddd;
+    margin: 20px 0;
+} 
+.time {
+    width: 0;
+    height: 3px;
+    background-color: #474747;
+}
+
+#btnVolumeMinus, .next, .play, .pause,  .prev,  #btnVolumePlus {
+    padding: 5px;
+    border-radius: 100%;
+}

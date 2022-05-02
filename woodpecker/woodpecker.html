@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="woodpecker.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="woodpeckerPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Fauna - 21964.mp4" type="video/mp4">
+            </video>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где живет дятел?</label>
+                <p><input class="inputOne" type="radio" name="question1"> В пустыне</p>
+                <p><input class="inputOne" type="radio" name="question1">На болоте </p>
+                <p><input class="inputOne" type="radio" name="question1" id="answer1">В лесу</p>
+                <p><input class="inputOne" type="radio" name="question1">В море </p>
+                <p><input class="inputOne" type="radio" name="question1">В космосе </p>
+    
+            </div>
+            <p class="answer">Дятловые обитают, главным образом, в лесах, на деревьях, поэтому ноги дятлов — короткие, с длинными пальцами и цепкими когтями.</p>
+                
+            <div class="inputDiv">
+                <label>Зачем дятел стучит по дереву?</label>
+                <p><input class="inputTwo" type="radio" name="question2">Просто так </p>
+                <p><input class="inputTwo" type="radio" name="question2" id="answer2">Для добывания пищи</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Точат клюв</p>
+                <p><input class="inputTwo" type="radio" name="question2">Делают для себя домик </p>
+    
+            </div>
+            <p class="answer">Дятлы долбят кору и сердцевину дерева, стараясь найти основную свою пищу: насекомых и их личинок. </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+</body>
+</html>

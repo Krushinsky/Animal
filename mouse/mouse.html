@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="mouse.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="mousePaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Mouse - 65812.mp4" type="video/mp4">
+            </video>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где живут мыши?</label>
+                <p><input class="inputOne" type="radio" name="question1" id="answer1"> В норе</p>
+                <p><input class="inputOne" type="radio" name="question1">В улье </p>
+                <p><input class="inputOne" type="radio" name="question1" >В гнезде</p>
+                <p><input class="inputOne" type="radio" name="question1">В банке </p>
+                <p><input class="inputOne" type="radio" name="question1">В клетке </p>
+    
+            </div>
+            <p class="answer">Мыши часто занимают норы других грызунов: полёвок, слепушонок, песчанок, — или используют для жилья естественные пустоты и трещины в земле. Поселяясь рядом с человеком, домовые мыши устраивают свои гнёзда в самых укромных и защищённых уголках, чаще всего под полом, в кучах мусора и бытовых отходов, на чердаках.</p>
+                
+            <div class="inputDiv">
+                <label>Чем питаются мыши? </label>
+                <p><input class="inputTwo" type="radio" name="question2"id="answer2">Ягодами </p>
+                <p><input class="inputTwo" type="radio" name="question2" >Нектаром и пыльцой растений</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Рыбой</p>
+                <p><input class="inputTwo" type="radio" name="question2">Змеями </p>
+    
+            </div>
+            <p class="answer">Мыши питаются как растительной (семена, ягоды, зеленые части растений), так и животной (насекомые) пищей.
+
+            </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+    
+</body>
+</html>

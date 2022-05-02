@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="icon" href="data:,">
+
+    <link rel="stylesheet" href="/player.css">
+
+</head>
+<body>
+    
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="fox.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="foxPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+
+<div id="container-countdown">
+    <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+        <source src="red_fox_-_28478 (Original).asc" type="video/mp4">
+        </video>
+    <form>
+        <div class="inputDiv">
+            <label>Вопрос 1. Где живут лисы?</label>
+            <p><input class="inputOne" type="radio" name="question1"> В степях</p>
+            <p><input class="inputOne" type="radio" name="question1">В пустынях </p>
+            <p><input class="inputOne" type="radio" name="question1" id="answer1">Все ответы правильные</p>
+            <p><input class="inputOne" type="radio" name="question1">В лесах </p>
+            <p><input class="inputOne" type="radio" name="question1">В горах </p>
+
+        </div>
+        <p class="answer">Природа наградила лис умением приспосабливаться к самым разным природным условиям. Эти млекопитающие смогли уверенно распространиться почти на все континенты, за исключением Южной Америки и суровой Антарктиды.</p>
+            
+        <div class="inputDiv">
+            <label>Чем питаются лисы? </label>
+            <p><input class="inputTwo" type="radio" name="question2">Скорпионами </p>
+            <p><input class="inputTwo" type="radio" name="question2" id="answer2">Все ответы правильные</p>
+            <p><input class="inputTwo" type="radio" name="question2" >Мышками</p>
+            <p><input class="inputTwo" type="radio" name="question2">Ящерицами </p>
+
+        </div>
+        <p class="answer">Лисица, хотя и принадлежит к типичным хищникам, питается очень разнообразными кормами. Среди употребляемой пищи выявлено более 400 видов животных и нескольких десятков видов растений. Повсеместно основу питания составляют мелкие грызуны, главным образом полёвковые. Тонкие длинные челюсти с острыми зубами идеально приспособлены для их ловли.Песчаная маленькая лиса в пустынях и полупустынях легко учует съедобные коренья, услышит движения ящериц, вкусных жуков и их личинок, скорпионов под грунтом, умело нападёт на зазевавшегося грызуна. Влагу животное добывает прямо из своего скудного рациона.
+
+        </p>
+                
+        
+    </form>
+<div>
+    <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+    <p id="result"></p>
+</div>
+</div>
+    
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+</body>
+</html>

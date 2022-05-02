@@ -1,0 +1,144 @@
+#myVideo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.678);
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    margin-top: 800px;
+}
+#btnContainer{
+    background-image: url(animal.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1500px;
+    height: 708px;
+    position: absolute;
+    background-position: center;
+    border-radius: 50px;
+    
+}
+#btnContainer:hover{
+    box-shadow: 5px 8px 5px rgb(97, 49, 49);    
+}
+#btnContainerTwo {
+    display: none;
+}
+#btnContainerThree{
+    display: none;
+}
+
+#one{
+margin-top: 145px;
+margin-left: 210px;
+}
+
+#two{
+    margin-top: 290px;
+    margin-left: 200px;
+}
+
+#three{
+    margin-top: -90px;
+    margin-left: 385px;
+}
+
+#four{
+    margin-top: -190px;
+    margin-left: 410px;
+}
+
+#five{
+    margin-top: -100px;
+    margin-left: 619px;
+}
+
+#six{
+    margin-top: -180px;
+    margin-left: 590px;
+}
+
+#seven{
+    margin-top: 390px;
+    margin-left: 590px;
+}
+
+#eight{
+    margin-top:70px;
+    margin-left: 460px;
+}
+
+#nine{
+    margin-top:-20px;
+    margin-left: 320px;
+}
+
+#ten{
+    margin-top:-50px;
+    margin-left: 805px;
+}
+
+#eleven{
+    margin-top:-30px;
+    margin-left: 1050px;
+}
+
+#twelve{
+    margin-top:-250px;
+    margin-left: 1020px;
+}
+
+#thirteen{
+    margin-top:-180px;
+    margin-left: 980px;
+}
+#fourteen{
+    margin-top: 105px;
+    margin-left: 1080px;
+}
+#fifteen{
+    margin-top: -160px;
+    margin-left: 1225px;
+}
+#sixteen{
+    margin-top: -160px;
+    margin-left: 1255px;
+}
+#seventeen{
+    margin-top: 200px;
+    margin-left: 1355px;
+}
+#eightteen{
+    margin-top: 105px;
+    margin-left: 1335px;
+}
+.config{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.name{
+    text-decoration: none;
+    font-size: 27px;
+    padding: 20px;
+    border-radius: 40px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.btnHead{
+    background-color: #c6f8cfc2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgb(110, 28, 28);
+}
+
+

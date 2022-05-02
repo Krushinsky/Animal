@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="bear.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="bearPaint.html">Рисование</a></button>
+        
+    </nav>
+
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Bear - 81205.mp4" type="video/mp4">
+            </video>
+        <audio id="player" autoplay loop>
+        <source src="" type="audio/mp3">
+        </audio>
+        <button id="myButton">START</button>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где живет мишка?</label>
+                <p><input class="inputOne" type="radio" name="question1"> На речке</p>
+                <p><input class="inputOne" type="radio" name="question1">В пустыне </p>
+                <p><input class="inputOne" type="radio" name="question1" id="answer1">В лесу</p>
+                <p><input class="inputOne" type="radio" name="question1">На море </p>
+                <p><input class="inputOne" type="radio" name="question1">На луне </p>
+    
+            </div>
+            <p class="answer">Бурый медведь – лесное животное. Обычные места их обитания в России – сплошные лесные массивы с буреломом и гари с густой порослью лиственных пород, кустарников и трав; медведь может заходить и в тундру, и в высокогорные леса.</p>
+                
+            <div class="inputDiv">
+                <label>Чем питается мишка? </label>
+                <p><input class="inputTwo" type="radio" name="question2">Шишками </p>
+                <p><input class="inputTwo" type="radio" name="question2" id="answer2">Ягоды, орехи, стебли трав, рыба, насекомые</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Супом</p>
+                <p><input class="inputTwo" type="radio" name="question2">Бургерами </p>
+    
+            </div>
+            <p class="answer">Бурый медведь всеядный, но рацион у него на 3/4 растительный: ягоды, жёлуди, орехи, корни, клубни и стебли трав. В неурожайные на ягоды годы в северных областях медведи посещают посевы овса, а в южных — посевы кукурузы; на Дальнем Востоке осенью кормятся в кедровниках. В его рацион также входят насекомые (муравьи, бабочки), черви, ящерицы, лягушки, грызуны (мыши, сурки, суслики, бурундуки) и рыба. </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    
+    
+
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+</body>
+</html>

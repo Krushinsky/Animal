@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="raccoon.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="raccoonPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Raccoon - 81448.mp4" type="video/mp4">
+            </video>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где живут еноты?</label>
+                <p><input class="inputOne" type="radio" name="question1"id="answer1"> В лесу</p>
+                <p><input class="inputOne" type="radio" name="question1">В пустыне </p>
+                <p><input class="inputOne" type="radio" name="question1" >На северном полюсе</p>
+                <p><input class="inputOne" type="radio" name="question1">В горах </p>
+                <p><input class="inputOne" type="radio" name="question1">На лугах </p>
+    
+            </div>
+            <p class="answer"> Места обитания енота – это смешанные, мангровые леса, реже тропические. Важно, чтобы кора основных пород деревьев в лесу позволяла легко забраться наверх в случае опасности, поэтому, например, буковые леса для енотов не подходят (у бука кора гладкая). Необходимое условие среды обитания – наличие водоемов или заболоченных участков. В некоторых частях ареала зверьки живут на побережье морей. </p>
+                
+            <div class="inputDiv">
+                <label>Чем питаются еноты? </label>
+                <p><input class="inputTwo" type="radio" name="question2">Ягодами </p>
+                <p><input class="inputTwo" type="radio" name="question2" id="answer2">Енот всеядный</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Листьями</p>
+                <p><input class="inputTwo" type="radio" name="question2">Грызунами </p>
+    
+            </div>
+            <p class="answer">Енот – не чистый хищник, а всеядное животное. В зависимости от вида и географического распространения, рацион питания зверьков может несколько отличаться, однако у всех представителей рода, так или иначе, наблюдается сезонность в выборе корма. Так, в сухой сезон еноты питаются в основном животной пищей: лягушками, насекомыми, крабами, раками, червями, моллюсками, змеями, ящерицами, грызунами, разоряют гнезда птиц и черепах. Более активную и крупную добычу зверьки ловят редко. В зависимости от вида, какие-то из мелких животных являются более предпочтительными. Кроме того, при обилии корма еноты склонны выбирать излюбленный объект охоты и проводить много времени в его поиске. Растительная пища енота довольно разнообразна: они поедают фрукты (дикий виноград, яблоки, хурму, инжир, персики, апельсины, мандарины), ягоды (вишню, сливу и т.д.), арбузы, желуди, орехи бука, грецкий орех и т.д. Живущие неподалеку от человека еноты с удовольствием роются в мусорных баках в поисках объедков. В сельской местности зверьки могут совершать набеги на фермы и красть ягоды, фрукты, кукурузу и т.д.
+
+            </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+</body>
+</html>

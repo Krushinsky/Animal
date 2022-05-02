@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="beaver.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="beaverPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Beaver - 47602.mp4" type="video/mp4">
+            </video>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где живет бобёр?</label>
+                <p><input class="inputOne" type="radio" name="question1"> В городе, в квартире</p>
+                <p><input class="inputOne" type="radio" name="question1">В пустыне </p>
+                <p><input class="inputOne" type="radio" name="question1" id="answer1">В лесу воле рек, ручьёв и озёр</p>
+                <p><input class="inputOne" type="radio" name="question1">На море </p>
+                <p><input class="inputOne" type="radio" name="question1">На северном полюсе </p>
+    
+            </div>
+            <p class="answer">Бобры населяют берега медленных лесных речек, ручьёв и озёр. Они сооружают из поваленных деревьев плотины, вызывая подъём уровня воды перед ними. Бобры создают каналы, по которым сплавляют брёвна к плотине и плавают за новыми деревьями. </p>
+                
+            <div class="inputDiv">
+                <label>Чем питаются бобры? </label>
+                <p><input class="inputTwo" type="radio" name="question2">Ягодами </p>
+                <p><input class="inputTwo" type="radio" name="question2" id="answer2">Корой и молодыми ветками деревьев</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Мясом</p>
+                <p><input class="inputTwo" type="radio" name="question2">Рыбой </p>
+    
+            </div>
+            <p class="answer">Бобры питаются корой и молодыми ветками деревьев, которые для этого специально валят, подгрызая основание.
+
+            </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    
+        <button id="myButton">START</button>
+        
+        <script src="/pageOne.js"></script>
+        <script src="/player.js"></script>
+
+</body>
+</html>

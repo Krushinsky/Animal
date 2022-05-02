@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="icon" href="data:,">
+
+    <link rel="stylesheet" href="/player.css">
+
+</head>
+<body>
+    
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="deer.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="deerPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+<div id="container-countdown">
+    <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+        <source src="Deer - 165.mp4" type="video/mp4">
+        </video>
+    <form>
+        <div class="inputDiv">
+            <label>Вопрос 1. Где живут Олени?</label>
+            <p><input class="inputOne" type="radio" name="question1"> В степи</p>
+            <p><input class="inputOne" type="radio" name="question1">В пустыне </p>
+            <p><input class="inputOne" type="radio" name="question1" id="answer1">В Лесу</p>
+            <p><input class="inputOne" type="radio" name="question1">На болоте </p>
+            <p><input class="inputOne" type="radio" name="question1">В городе </p>
+
+        </div>
+        <p class="answer">Благородный олень предпочитает широколиственные, субтропические и таёжные леса, берега рек и горные альпийские луга. В Саянах водятся маралы, которые живут в верхних пределах лесов, переходящих в альпийские луга. Любимое место обитания изюбра — дубовые леса Сихотэ-Алиня. Бухарский олень предпочитает берега рек, заросли тополей и различных кустарников.</p>
+            
+        <div class="inputDiv">
+            <label>Чем питаются олени? </label>
+            <p><input class="inputTwo" type="radio" name="question2">Ягодами </p>
+            <p><input class="inputTwo" type="radio" name="question2" id="answer2">Все ответы правильные</p>
+            <p><input class="inputTwo" type="radio" name="question2" >Листьями</p>
+            <p><input class="inputTwo" type="radio" name="question2">Желудями </p>
+
+        </div>
+        <p class="answer">Питается благородный олень самой разнообразной пищей. Основной едой этого животного является травянистая растительность, злаки, бобовые. Весной, после сложного для животных времени года — зимы, особое значение придаётся употреблению в пищу белковой растительности, для пополнения сил и получения полноценного витаминного корма. В зимний период времени, если снежный покров не очень велик, благородный олень пользуется возможностью добывать упавшие осенью листья с деревьев, различные стебли и кору кустарников. Употребляют также хвою сосны и ели. Большим подспорьем в зимний период времени для оленей являются жёлуди, которые животное добывает из-под снега. Также в пищу идут каштаны, всевозможные орехи, семена многих видов растений. Грибы, лишайники, плоды, ягоды — всё идет в пищу благородному оленю.
+
+        </p>
+                
+        
+    </form>
+<div>
+    <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+    <p id="result"></p>
+</div>
+</div>
+    
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+    
+</body>
+</html>

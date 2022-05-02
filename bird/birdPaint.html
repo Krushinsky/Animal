@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="bear.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="bearPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+    <div>        <p id="count"> Дорогие родители! Установите время, посмотрите с ребенком видео и помогите ему нарисовать птичку за выбранное время.</p>
+    </div>
+    <nav class="config">
+        <p id="countdown"> <a class="name">Время </a>  </p>
+        
+        <input id="inputTime" title="Введите время в минутах..." type="number" placeholder="Введите время (мин)..." pattern="^[0-9]+$" min ='1' step = '1' oninput="validity.valid||(value='');">
+        
+        <button id="start"><a class="name" >Начать</a>  </button>
+        <button id="pause" class="disabled"><a class="name">Пауза</a> </button>
+        
+    </nav>
+    <br>
+    <div id="container-countdown">
+        <p id="countdown"> Время видео: 01:24</p>
+
+        <video loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Раскраска Яркая Птичка _ Как Нарисовать Птичку _ Раскраски Малышам.mp4" type="video/mp4">
+            </video>
+            <br>
+            <p id="countdown">Источник https://www.youtube.com/watch?v=hnpXRb5HEAc</p>
+            <p id="countdown">Источник pixabay.com</p>
+        </div>
+    <script src="/bP.js"></script>
+    <script src="/player.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

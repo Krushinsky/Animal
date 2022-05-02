@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="squirrel.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="squirrelPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Squirrel - 2717.mp4" type="video/mp4">
+            </video>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где белка устраивает себе домик?</label>
+                <p><input class="inputOne" type="radio" name="question1"> В норе</p>
+                <p><input class="inputOne" type="radio" name="question1"> В телевизоре </p>
+                <p><input class="inputOne" type="radio" name="question1" >В улее</p>
+                <p><input class="inputOne" type="radio" name="question1">В шалаше </p>
+                <p><input class="inputOne" type="radio" name="question1"id="answer1">В дупле </p>
+    
+            </div>
+            <p class="answer">Убежища обыкновенная белка устраивает только на деревьях. В лиственных лесах обычно живёт в дуплах, натаскивая туда мягкую подстилку из травы, древесных лишайников, сухих листьев. В хвойных строит шарообразные гнёзда из сухих веток (гайна), которые изнутри выстилает мхом, листьями, травой, шерстью.</p>
+                
+            <div class="inputDiv">
+                <label>Чем питаются белки? </label>
+                <p><input class="inputTwo" type="radio" name="question2">Овощами </p>
+                <p><input class="inputTwo" type="radio" name="question2" id="answer2">Орехами</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Рыбой</p>
+                <p><input class="inputTwo" type="radio" name="question2">Кашей </p>
+    
+            </div>
+            <p class="answer">Рацион белки очень разнообразен и включает более 130 наименований кормов, среди которых основную массу составляют семена хвойных деревьев: ели, сосны, сибирского кедра, пихты, лиственницы. В южных районах, где растут дубовые леса с подлеском из лещины, питается желудями и лесными орехами.
+
+            </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+body{
+    background-color: #f4fbff;
+}
+#container-countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#myVideo{
+    width: 800px;
+    margin-top: 25px;
+    
+}
+
+form{
+    margin-top: 30px;
+}
+.inputDiv{
+    background-color: rgba(73, 79, 161, 0.836);
+    border-radius: 50px;
+    box-shadow: 1px 2px 2px black;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#countdownFirst{
+    font-size: 27px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+p, label{
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+#countdown {
+    font-size: 27px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0;
+    padding: 5px;
+}
+
+
+#count{
+    font-size: 27px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    margin-top: 35px;
+}
+
+label{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    text-align: center;
+}
+.answer{
+    display: none;
+    width: 95%;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgba(73, 79, 161, 0.836);
+}
+
+input[type="radio"]{
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e6e7e6;
+    border-radius: 50%;
+    margin-left: 20px;
+    }
+
+  /* appearance for checked radiobutton */
+    input[type="radio"]:checked {
+    background-color: #e02626;
+    }
+div{
+    display: flex;
+    flex-direction: column;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    }
+
+#btn, #result{
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 50px;
+width: 70%;
+padding: 15px;
+font-family: 'Bitter', serif;
+font-size: 20px;
+color: rgb(255, 244, 244);
+background-color: rgba(73, 79, 161, 0.836);
+box-shadow: 1px 2px 2px black;
+border-radius: 50px;
+
+}
+#result{
+    display: none;
+    text-align: center;
+}
+
+.config{
+    background-color: #c6f8cfc2;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.name {
+    text-decoration: none;
+    font-size: 27px;
+    padding: 20px;
+    border-radius: 40px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    
+}
+#btnHead {
+    background-color: #c6f8cfc2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(28, 36, 110);
+
+}
+#start, #pause{
+    background-color: #c6f8cfc2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(28, 36, 110);
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 40px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#inputTime{
+    background-color: #eefff1c2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(28, 36, 110);
+    text-decoration: none;
+    font-size: 27px;
+    border-radius: 40px;
+    color: rgb(28, 36, 110);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding-left:20px;
+    
+}
+#inputTime:placeholder-shown {
+    text-overflow: ellipsis;
+  }
+#myButton{
+    display: none;
+}
+
+
+@media all and (max-width:500px){
+
+    .heading{
+        width: 100%;
+    }
+    p, label{
+font-size: 20px;
+    }
+    #myButton{
+        display: block;
+    }
+    }

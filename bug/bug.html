@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page.css">
+    <link rel="stylesheet" href="/player.css">
+    <link rel="icon" href="data:,">
+
+
+</head>
+<body>
+    <nav class="config">
+        <button id="btnHead"><a class="name" href="bug.html">Вопросы</a></button>
+        <button id="btnHead"><a class="name" href="/index.html" >Главная </a></button>
+        <button id="btnHead"><a class="name" href="bugPaint.html">Рисование</a></button>
+        
+    </nav>
+    <div id="player">
+        <audio id="audio"  src="/music/carefree-ukulele-claps-playful-positive-corporate-cheerful-music-16391.mp3" >
+        
+        </audio>
+        <div class="btnVolume">
+            
+            <p id="volume">Громкость: 0.5</p>
+
+        </div>
+        <div class="audio-track"><div class="time"></div></div>
+
+        <div id="controls">
+            <button id="btnVolumeMinus"><img src="/icons8-вычитание-40.png" alt=""></button>
+            <button class="next"><img src="/icons8-назад-40.png"/></button>
+            <button class="play"><img src="/icons8-воспроизведение-40.png"/></button>
+            <button class="pause"><img src="/icons8-пауза-40.png"/></button>
+            <button class="prev"><img src="/icons8-вперед-40.png"/></button>
+            <button id="btnVolumePlus"><img src="/icons8-сложение-40.png" alt=""></button>
+        </div>
+    </div>
+    <div id="container-countdown">
+        <p id="countdownFirst"> Дорогие родители! Посмотрите с ребенком видео и помогите ему ответить на следующие вопросы:</p>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="Beetle - 9860.mp4" type="video/mp4">
+            </video>
+        <form>
+            <div class="inputDiv">
+                <label>Вопрос 1. Где живут Жуки?</label>
+                <p><input class="inputOne" type="radio" name="question1"> В лесу</p>
+                <p><input class="inputOne" type="radio" name="question1">В пустыне </p>
+                <p><input class="inputOne" type="radio" name="question1" id="answer1">Все ответы правильные</p>
+                <p><input class="inputOne" type="radio" name="question1">В парке </p>
+                <p><input class="inputOne" type="radio" name="question1">На болоте </p>
+    
+            </div>
+            <p class="answer">Жуки живут практически во всех уголках Земного шара, начиная от знойных пустынь и влажных экваториальных лесов, и заканчивая бескрайними просторами тундры, за исключением зоны вечных снегов высокогорных вершин, а также ледяных полей Антарктиды и Арктики.</p>
+                
+            <div class="inputDiv">
+                <label>Чем питаются жуки? </label>
+                <p><input class="inputTwo" type="radio" name="question2">Ягодами </p>
+                <p><input class="inputTwo" type="radio" name="question2" id="answer2">Зависит от жука</p>
+                <p><input class="inputTwo" type="radio" name="question2" >Листьями</p>
+                <p><input class="inputTwo" type="radio" name="question2">Овощами </p>
+    
+            </div>
+            <p class="answer">Одни насекомые, такие как комары, вши и клопы, питаются кровью. Другие поедают меньших насекомых и выступают хищниками в пищевой цепи. Некоторые питаются пометом или мертвыми тушами животных.
+
+                С другой стороны, есть определенные травоядные насекомые, такие как жуки. Итак, если вы когда-либо считали, что жуки, скорее всего, грызут и едят твердые предметы, вы правы. Их любимые блюда включают листья, древесину и фрукты.
+                
+                Но не все жуки едят только растения. Некоторые из них являются всеядными. Хотя, определенные виды едят только конкретные растения и ничего больше! Хорошими примерами этого являются пьявицы красногрудые, которые потребляют только зерновые культуры.
+                
+                Плотоядные жуки зачастую едят улиток, дождевых червей и других живых существ. С другой стороны, есть некоторые жуки, которые поедают экскременты. Они называются копрофагами (например, навозники-землерои). Некрофаги – жуки, участвующие в разложении организмов и поедающие мертвые туши (например, мертвоеды).
+
+            </p>
+                    
+            
+        </form>
+    <div>
+        <button type="submit" id="btn" class="disabled" > Узнать результат</button>
+        <p id="result"></p>
+    </div>
+    </div>
+   
+    
+    <button id="myButton">START</button>
+    
+    <script src="/pageOne.js"></script>
+    <script src="/player.js"></script>
+
+</body>
+</html>
